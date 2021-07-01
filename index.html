@@ -2,116 +2,131 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Steal Energy</title>
-    <!-- Favicon -->
-    <link rel="StealEnergy Icon" type="image/x-icon" href="assets/favicon.ico">
-    <!-- Font Awesome icons-->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Neon Glow Theme (Core + Bootstrap)-->
-    <link href="css/bootstrap-neon-glow.css" rel="stylesheet">
-    <!-- CSS Styles -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- CSS Animsition -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Steal Energy</title>
+  <!-- Favicon -->
+  <link rel="StealEnergy Icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- Bootstrap (Neon Glow Theme)-->
+  <link href="css/bootstrap-neon-glow.css" rel="stylesheet">
+  <!-- CDN Font Awesome Icons-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <!-- CDN Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Local CSS Styles -->
+  <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Botão Subir Pagina -->
-    <button class="btn btn-info btn-shadow" onclick="topFunction()" id="TopBtn" title="Subir Pagina">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Header-->
-    <header class="home-fundo d-flex align-items-center">
-        <div class="headline container px-4 px-lg-5 text-center">
-            <img class="se-icon-main" src="assets/steal_energy_icons/se_logo-white.png" width="325" height="325" alt="Steal Energy Logo">
-            <h3 class="subtitulo">We Are The</h3>
-            <h1 class="titulo">Steal Energy</h1>
-            <h3 class="mb-5"><em></em></h3>
-            <div class="container py-2 px-1">
-                <a href="#somos" class="btn btn-info animsition-link btn-shadow">Conhecer</a>
-                <a href="https://github.com/stealenergy" class="btngh btn btn-info btn-shadow"><span class="fab fa-github mr-2"></span>Github</a>
-            </div>
+  <!-- Menu Lateral -->
+  <div class="sidebar">
+    <div class="container-lat">
+      <div class="row justify-content-center">
+        <div class="col-md-6 pt-2 pb-2">
+          <div class="logo text-center">
+            <img src="/assets/logos/se_logo-white.png" class='logose bx bxl-c-plus-plus'></img>
+          </div>
         </div>
-    </header>
-
-    <!-- Somos a Steal Energy -->
-    <section id="somos">
-        <div class="container mp-2 pb-5 mb-5 mt-5">
-            <div class="text-center">
-                <div class="jumbotron">
-                    <h1 class="ml9">
-                        <span class="text-wrapper">
-                            <span class="letters">
-                                Olá, Mundo!
-                            </span>
-                        </span>
-                    </h1>
-                    <h3 class="">Somos o grupo Steal Energy!</h3>
-                    <h4 class="my-4">Nosso grupo foi formado na matéria do PAC do curso de Engenharia de Software pelo Centro Universitario da Católica de Santa Catarina.</h4>
-                    <h4 class="my-4">Temos o objetivo de pesquisar e desenvolver conteudos relacionados a Robótica, com foco na area de TI em geral!</h4>
-                    <div class="container pt-4">
-                        <a href="#robotica" class="btn btn-shadow text-mono btn-info">Descobrir Mais</a>
-                    </div>
-                </div>
-            </div>
+      <div class="logo_content justify-content-center">
+        <div class="logo">
+          <div class="text-center textselogo logo_name">&nbsp;&nbsp;&lt;Steal Energy/&gt;</div>
         </div>
-    </section>
-
-    <!-- Robótica na TI -->
-    <section>
-        <div class="container pt-3 pb-1">
-            <h2 class="text-center mb-5 titulosection" id="robotica">Por que Robótica na TI?</h2>
-        </div>
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      </div>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <a href="#">
+          <i class='fas fa-home fa-lg'></i>
+          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-robot fa-lg'></i>
+          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Robótica na TI</span>
+        </a>
+        <span class="tooltip">Robótica na TI</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-road fa-lg'></i>
+          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Seguidor de Linha</span>
+        </a>
+        <span class="tooltip">Seguidor de Linha</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-users fa-lg'></i>
+          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Sobre Nós</span>
+        </a>
+        <span class="tooltip">Sobre Nós</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-envelope fa-lg'></i>
+          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Contato</span>
+        </a>
+        <span class="tooltip">Contato</span>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="container">
         <div class="container">
-            <div class="card mb-3 text-center">
-                <div class="card-body">
-                    <blockquote class="card-blockquote">
-                        <div class="video-container">
-                            <iframe width="1231" height="701" src="https://www.youtube.com/embed/qLKgqWSbz3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="pb-2 pt-5 container">
-                            <h5 class="pqroboticanati">Primeira apresentação produzida por nós, para o projeto do PAC "Por que Robótica na TI?".</h5>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
+          <div class="container">
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- Seguidor de Linha -->
-    <section>
-        <div class="container pt-5 pb-1">
-            <h2 class="text-center mb-5 pt-5 titulosection" id="robotica">Robô Seguidor de Linha</h2>
+  <!-- Home Content --> <!--
+  <div class="wallpaper">
+    <div class="container">
+      <div class="home">
+        <div class="jumbotron">
+          <h1 class="display-3 pb-3">Olá, Mundo!</h1>
+          <h3 class="pb-2">Somos a Steal Energy!</h3>
+          <h5 class="my-3">Nosso grupo foi formado na matéria do PAC no curso de Engenharia de Software pelo Centro Universitario da Católica de Santa Catarina.</h4>
+          <div class="container py-2 px-1">
+            <a class="btn btn-info animsition-link btn-shadow">Conhecer</a>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="d-flex align-items-stretch">
-                    <div class="col">
-                        <div class="card h-100 sm-4">
-                            <img class="card-img-top img-fluid" src="assets/seguidor_de_linha/card1.jpg" alt="Robô 1">
-                            <div class="card-body">
-                                <h4 class="card-title">Conceito:</h4>
-                                <p class="card-text">Um robô seguidor de linha é  um dos conceitos básicos para quem esta começando na área da robótica, por ser um robô totalmente autônomo, programado apenas para ler linhas escuras, com sensores de luz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 sm-4">
-                            <img class="card-img-top img-fluid" src="assets/seguidor_de_linha/card2.jpg" alt="Robô 2">
-                            <div class="card-body">
-                                <h4 class="card-title">Como Funciona:</h4>
-                                <p class="card-text">Ele funciona com pilhas para energia e com uma placa arduino,  para corrente elétrica e programação, rodas, motores, sensores (lrd) e mais alguns componentes. Com esses materiais você pode ter seu robô seguidor de linha!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Seguidor de Linha -->
+  <section>
+    <div class="container pb-1">
+      <h1 class="text-center pb-5 pt-5">Seguidor de Linha</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex align-items-stretch">
+          <div class="col">
+            <div class="card h-100 sm-4">
+              <div class="card-body">
+                <h4 class="text-center card-title">Conceito</h4>
+                <p class="card-text">Um robô seguidor de linha é  um dos conceitos básicos para quem esta começando na área da robótica, por ser um robô totalmente autônomo, programado apenas para ler a linha escura de uma pista, através de sensores de luz.</p>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 sm-4">
+              <div class="card-body">
+                <h4 class="text-center card-title">Como Funciona</h4>
+                <p class="card-text">Ele funciona basicamente com uma placa, como um Arduino ou Raspberry Pi, por exemplo, uma fonte de corrente elétrica, alguns componentes como rodas, motores, sensores..., E a programação dele!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
             <div clas="row">
-                <h4 class="text-center pt-5 pb-2">Exemplo de Funcionamento:</h4>
+                <h3 class="text-center pt-5 pb-2">Exemplo de Funcionamento</h3>
                     <div class="container card-body jumbotron">
                         <div class="row text-center rounded mx-auto d-block">
                             <img class="img-fluid" src="assets/seguidor_de_linha/exemplo.jpg" alt="Exemplo">
@@ -141,136 +156,16 @@
                 <p class="pt-4 pb-3 card-text">Após a parte da montagem e programação, é essencial fazer a calibragem (testes) para ter certeza que tudo corre bem. Desde as partidas dos motores, até quanto a luz que o sensor precisara receber para então assim fazer a curva, por exemplo. Tudo pode ser feito numa ferramenta super bacana chamada Tinkercad, nela você pode fazer toda a simulação para, assim, conseguir um projeto melhor.</p>No Link acima você consegue ver um exemplo de um código exportado pelo Tinkercard.</p>
             </div>
         </div>
-    </section>
+  </section>
 
-    <!-- Nosso Time v1
-    <section>
-        <div class="py-5 team4">
-            <div class="container">
-                <div class="row justify-content-center mb-4">
-                    <div class="col-md-7 text-center">
-                        <h3 class="text-center mb-5 team" id="team">Nossa Equipe</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="wrapkit" class="img-fluid rounded-circle"/>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="pt-2">
-                                    <h5 class="mt-4 font-weight-medium mb-4">Fábio Cypriano</h5>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-instagram"></span></a>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-github"></span></a>  
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-linkedin"></span></a>      
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="wrapkit" class="img-fluid rounded-circle"/>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="pt-2">
-                                    <h5 class="mt-4 font-weight-medium mb-4">Guilherme Viana</h5>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-instagram"></span></a>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-github"></span></a>  
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-linkedin"></span></a>      
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="wrapkit" class="img-fluid rounded-circle"/>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="pt-2">
-                                    <h5 class="mt-4 font-weight-medium mb-4">Rodrigo Denk Rosa</h5>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-instagram"></span></a>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-github"></span></a>  
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-linkedin"></span></a>      
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="col-lg-3 mb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="wrapkit" class="img-fluid rounded-circle"/>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="pt-2">
-                                    <h5 class="mt-4 font-weight-medium mb-4">Wanderlei Carlos Ferreira</h5>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-instagram"></span></a>
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-github"></span></a>  
-                                        <a href="#!" class="btn btn-outline-info"><span class="fab fa-linkedin"></span></a>      
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>  -->
 
-    <!-- Nosso Time v2-->
-    <div class="container teamv2cont">
-        <div class="container pb-1">
-            <h2 class="text-center mb-4 pt-5 titulosection" id="robotica">Integrantes do Grupo</h2>
-        </div>
-        <div class="mx-auto teamv2 container">
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action">Fábio Elias Cypriano</a>
-                <a class="list-group-item list-group-item-action">Guilherme Banzati Viana Ribeiro</a>
-                <a class="list-group-item list-group-item-action">Rodrigo Denk Rosa</a>
-                <a class="list-group-item list-group-item-action">Wanderlei Carlos Ferreira</a>
-                <a class="list-group-item list-group-item list-group-item-info titulolista"></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <section>
-        <div class="pt-5 tm-footer">
-            <div class="container">
-                <div class="text-center">
-                    <img class="se-icon-main icon-reducesize" src="assets/steal_energy_icons/se_logo-white.png" width="325" height="325" alt="Steal Energy Logo">
-                    <div class="pt-1 pb-3">
-                        <span class="hal-9000 d-block mx-auto mb-4 mt-3"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--Core ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- core anime.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- .js Main -->
-    <script src="js/main.js"></script>
+  <!-- Local navbar-script -->
+  <script src="js/navbar-script.js"></script>
+  <!-- Core Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Core jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </body>
 

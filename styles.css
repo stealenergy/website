@@ -1,0 +1,107 @@
+/* ##--- Importações ---## */
+
+/* Navbar */
+@import url(/css/navbar.css);
+/* Animação Icone Navbar */
+@import url(/css/animista-se-icon.css);
+/* Background - Home */
+@import url(/css/wallpaper-abstract-timekeeper.css);
+/* Fonte - Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap');
+/* Fonte - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ##--- Root ---## */
+
+:root {
+    /* Variaveis - Cores Background */
+    --preto-fundo: rgb(24,24,25);
+    --azul-claro: rgb(135,234,233);
+    --azul-escuro: rgb(69,134,177);
+    --verde-claro: rgb(60,148,132);
+    --verde-escuro: rgb(24,73,77);
+}
+
+/* ##--- Correções ---## */
+
+/* Correção do Menu Lateral */
+body > div.sidebar > ul {
+    padding-left: 0.1rem !important;
+}
+
+/* Correção do Tamanho do Icone */
+body > div.sidebar > div > div > div:nth-child(1) > div > img {
+    width: 0% !important;
+    height: 75px !important;
+}
+
+/* Correção do Tamanho do Icone (Active) */
+body > div.sidebar.active > div > div > div:nth-child(1) > div > img {
+    width: 4.5rem !important;
+    height: 75px !important;
+}
+
+/* Correção do bug no Texto */
+body > div.sidebar > div > div > div.logo_content.justify-content-center {
+    white-space:nowrap !important;
+    overflow:hidden !important;
+}
+
+/* Correção do bug no Texto (Active) */
+body > div.sidebar.active > div > div > div.logo_content.justify-content-center {
+    white-space:nowrap !important;
+    overflow:hidden !important;
+}
+
+/* Correção da posição dos Icones */
+li > a {
+    padding-left: 10px !important;
+}
+
+/* Correção Espaço Esquerdo em Containers */
+.container {
+    padding-left: 5.5rem;
+}
+
+/* ##--- Animações ---## */
+
+/* Animação Logo Navbar */
+.logose {
+	-webkit-animation: vibrate-3 4s ease-out infinite alternate both;
+    animation: vibrate-3 4s ease-out infinite alternate both;
+}
+
+/* ##--- Fontes ---## */
+
+/* Fonte do Logo */
+.textselogo {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Fonte da Navbar */
+.links_name {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ##--- Body ---## */
+
+/* Wallpaper */
+body {
+    background-image: url('/assets/abstract-timekeeper.svg');
+    background-repeat: no-repeat;
+    background-size:250%;
+}
+
+/* ##--- Home ---## */
+
+/* Centralizar Jumbotron */
+.home {
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+    background-color: var(--preto-fundo);
+}
