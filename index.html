@@ -7,107 +7,116 @@
   <title>Steal Energy</title>
   <!-- Favicon -->
   <link rel="StealEnergy Icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- CDN highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github-dark.min.css">
   <!-- Bootstrap (Neon Glow Theme)-->
   <link href="css/bootstrap-neon-glow.css" rel="stylesheet">
-  <!-- CDN Font Awesome Icons-->
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-  <!-- CDN Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <!-- Local CSS Styles -->
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- Menu Lateral -->
-  <div class="sidebar">
-    <div class="container-lat">
-      <div class="row justify-content-center">
-        <div class="col-md-6 pt-2 pb-2">
-          <div class="logo text-center">
-            <img src="/assets/logos/se_logo-white.png" class='logose bx bxl-c-plus-plus'></img>
+  
+  <!-- Botão Menu -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
+  <!-- ### Header ### -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="logo">
+        <img class="logo-white vibrate-1 img-fluid" src="/assets/logos/se_logo-white.png" alt="StealEnergyLogo">
+        <h1 class="titulo-se pb-5">&nbsp;&lt;Steal Energy/&gt;&nbsp;</a></h1>
+        <!-- <div class="social-links mt-3 text-center pt-2">
+          <a href="#" class="btn btn-outline-light">
+            <span class="fab fa-github mr-2"></span>Github -->
+          </a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#robotica_ti"><i class="fas fa-robot"></i> <span>&nbsp;&nbsp;Robótica na TI</span></a></li>
+          <li><a href="#seguidor_de_linha"><i class="fas fa-car-side"></i> <span>&nbsp;&nbsp;Seguidores de Linha</span></a></li>
+          <li><a href="#tinkercard"><i class="far fa-window-restore"></i> <span>&nbsp;&nbsp;Tinkercard</span></a></li>
+          <li><a href="#codigo"><i class="fas fa-laptop-code"></i> <span>&nbsp;&nbsp;Explicação do Código</span></a></li>
+          <li><a href="#componentes"><i class="fas fa-screwdriver"></i> <span>&nbsp;&nbsp;Componentes</span></a></li>
+          <li><a href="#team"><i class="fas fa-users"></i> <span>&nbsp;&nbsp;Equipe</span></a></li>
+        </ul>
+      </nav>
+      <!-- Botão Fechar Menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+  
+  <!-- ### Home / Robótica na TI ### -->
+  <section id="robotica_ti" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="robotica-container" data-aos="fade-in">
+      <div class="pt-5 container">
+        <div class="row">
+          <div class="pt-5 col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 pt-5">
+            <h1 class="robotica_ti_titulo"><mark class="mark_robotica">&nbsp;Porque a&nbsp;</mark></h1>
+            <h1 class="robotica_ti_titulo"><mark class="mark_robotica">&nbsp;Robótica&nbsp;na&nbsp;TI?&nbsp;</mark></h1>
           </div>
         </div>
-      <div class="logo_content justify-content-center">
-        <div class="logo">
-          <div class="text-center textselogo logo_name">&nbsp;&nbsp;&lt;Steal Energy/&gt;</div>
-        </div>
-        <i class='bx bx-menu' id="btn"></i>
-      </div>
-      </div>
-    </div>
-    <ul class="nav_list">
-      <li>
-        <a href="#">
-          <i class='fas fa-home fa-lg'></i>
-          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Home</span>
-        </a>
-        <span class="tooltip">Home</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='fas fa-robot fa-lg'></i>
-          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Robótica na TI</span>
-        </a>
-        <span class="tooltip">Robótica na TI</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='fas fa-road fa-lg'></i>
-          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Seguidor de Linha</span>
-        </a>
-        <span class="tooltip">Seguidor de Linha</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='fas fa-users fa-lg'></i>
-          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Sobre Nós</span>
-        </a>
-        <span class="tooltip">Sobre Nós</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='fas fa-envelope fa-lg'></i>
-          <span class="links_name">&nbsp;&nbsp;&nbsp;&nbsp;Contato</span>
-        </a>
-        <span class="tooltip">Contato</span>
-      </li>
-    </ul>
-    <div class="container">
-      <div class="container">
-        <div class="container">
-          <div class="container">
+        <div class="container-badge">
+          <div class="float-right">
+            <span class="badge badge-light">28/04/2021</span>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Home Content --> <!--
-  <div class="wallpaper">
-    <div class="container">
-      <div class="home">
-        <div class="jumbotron">
-          <h1 class="display-3 pb-3">Olá, Mundo!</h1>
-          <h3 class="pb-2">Somos a Steal Energy!</h3>
-          <h5 class="my-3">Nosso grupo foi formado na matéria do PAC no curso de Engenharia de Software pelo Centro Universitario da Católica de Santa Catarina.</h4>
-          <div class="container py-2 px-1">
-            <a class="btn btn-info animsition-link btn-shadow">Conhecer</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Seguidor de Linha -->
-  <section>
-    <div class="container pb-1">
-      <h1 class="text-center pb-5 pt-5">Seguidor de Linha</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="d-flex align-items-stretch">
+        <div class="row">
           <div class="col">
+            <div class="video-container">
+              <iframe width="1231" height="701" src="https://www.youtube.com/embed/qLKgqWSbz3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container-box-robotica pt-3 pr-5 pl-5">
+          <div class="card text-center bg-light text-dark">
+            <div class="card-body-robotica_ti">
+              <p class="mb-0">Primeira apresentação produzida pelo grupo, para o projeto do PAC "Porque Robótica na TI?".</p>
+              </div>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </section>
+
+  <!-- Função Main -->
+  <main id="main">
+
+  <!-- ### Seguidor de Linha ### -->
+  <section id="seguidor_de_linha" class="container">
+    <div class="section-title mb-4 mt-5 pt-5 pb-2 text-center">
+      <h2 class="title-seguidor"><mark class="mark-seguidor">&nbsp;Seguidores&nbsp;de&nbsp;Linha&nbsp;</mark></h2>
+    </div>
+    <div class="container pb-3">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb pb-3">
+          <a href="https://hackster.imgix.net/uploads/attachments/526925/blob_QhjtHuu14p.blob?auto=compress%2Cformat&w=900&h=675&fit=min" class="fancybox" rel="ligthbox">
+            <img src="https://hackster.imgix.net/uploads/attachments/526925/blob_QhjtHuu14p.blob?auto=compress%2Cformat&w=900&h=675&fit=min" class="zoom img-fluid "  alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb pb-3">
+          <a href="https://inatel.br/robotica/images/fotos/robotbulls/seguidor.jpg" class="fancybox" rel="ligthbox">
+            <img src="https://inatel.br/robotica/images/fotos/robotbulls/seguidor.jpg" class="zoom img-fluid "  alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb pb-3">
+          <a href="https://upload.wikimedia.org/wikipedia/commons/4/42/Line_follower.jpg" class="fancybox" rel="ligthbox">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Line_follower.jpg" class="zoom img-fluid "  alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb pb-3">
+          <a href="http://www.wickedbotz.com.br/blogs/wp-content/uploads/2018/05/herbie-360x240.jpg" class="fancybox" rel="ligthbox">
+            <img src="http://www.wickedbotz.com.br/blogs/wp-content/uploads/2018/05/herbie-360x240.jpg" class="zoom img-fluid "  alt="">
+          </a>
+        </div>        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6 pb-2">
             <div class="card h-100 sm-4">
               <div class="card-body">
                 <h4 class="text-center card-title">Conceito</h4>
@@ -115,58 +124,356 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 pb-2">
             <div class="card h-100 sm-4">
               <div class="card-body">
                 <h4 class="text-center card-title">Como Funciona</h4>
-                <p class="card-text">Ele funciona basicamente com uma placa, como um Arduino ou Raspberry Pi, por exemplo, uma fonte de corrente elétrica, alguns componentes como rodas, motores, sensores..., E a programação dele!</p>
+                <p class="card-text">Ele funciona basicamente com uma placa, como um Arduino ou Raspberry Pi, por exemplo, uma fonte de corrente elétrica, alguns componentes como rodas, motores, sensores..., E a programação dele!</p>
               </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- ### Tinkercard ### -->
+  <section id="tinkercard">
+    <div class="section-title pt-4 mt-4 pb-1">
+      <h2 class="pl-3">Autodesk Tinkercad</h2>
+      <p class="pl-3 pt-2">O Tinkercad é um programa da Autodesk de modelagem 3D online gratuito que roda em um navegador da web.</p>
+      <p class="pl-3 pb-1">Nele podemos também projetar e fazer a simulação de circuitos em Arduino, como no exemplo abaixo, em que projetamos nosso robô.</p>
+    </div>
+    <div class="container pb-5">
+      <div class="row text-center rounded mx-auto d-block">
+        <img class="img-fluid" src="assets/img/tinkercard/tinkercard.png" alt="Tinkercard">
+      </div>
+    </div>
+  </section>
+
+  <!-- ### Código ### -->
+  <section id="codigo">
+    <div class="section-title pt-4 pl-3 pb-1">
+      <h3 class="pl-3">Código do Robô</h3>
+      <p class="pl-3 pt-2">Programamos o robô com o objetivo de manter sempre os dois sensores sobre a linha.</p>
+      <p class="pl-3 pb-1">Na explicação abaixo, detalhamos o funcionamento do nosso primeiro código.</p>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7 mt-5"><p>Nesta primeira parte, são definidos os nomes para as portas que serão usadas para a execução deste código.</p><p>Este não é um processo obrigatório, porém facilita muito o desenvolvimento do programa.</p></div>
+      <div class="col-md-5">
+        <pre><code class="C">
+// MOTOR
+#define IN1 2
+#define IN2 4
+#define IN3 7
+#define IN4 5
+#define ENA 3
+#define ENB 6
+
+// LED RGB
+#define LEDR 9
+#define LEDB 10
+#define LEDG 11
+
+// SENSOR
+#define S1 A0
+#define S2 A1
+#define S3 A2
+#define S4 A3
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7 mt-5"><p>Nesta fase, através das comandas "pinMode" e "analogWrite".</p><p>São setadas as funções de cada uma das portas.</p>
+      </p></div>
+      <div class="col-md-5">
+        <pre><code class="C">
+void setup()
+{
+  // MOTOR
+  pinMode(IN1,OUTPUT);
+  pinMode(IN2,OUTPUT);
+  pinMode(IN3,OUTPUT);
+  pinMode(IN4,OUTPUT);
+  pinMode(ENA,OUTPUT);
+  pinMode(ENB,OUTPUT);
+  analogWrite(ENA,255);
+  analogWrite(ENB,255);
+  
+  // LED RGB
+  pinMode(LEDR, OUTPUT);
+  pinMode(LEDB, OUTPUT);
+  pinMode(LEDG, OUTPUT);
+  
+  Serial.begin(9600);
+}
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7  mt-5"><p>Nesse processo de loop, são criadas as variaveis para as quatros sensores.</p><p>Estas variaveis são inseridas em umas estrutura condicional que segue a seguinte condição:...</p></div>
+      <div class="col-md-5">
+        <pre><code class="C">
+void loop()
+{
+  // Leitura dos sensores
+  int s1, s2, s3, s4;
+  
+  s1=analogRead(S1);
+  s2=analogRead(S2);
+  s3=analogRead(S3);
+  s4=analogRead(S4);
+  
+  int luz = 500;
+  
+  Serial.print(s1);
+  Serial.print(" ");
+  Serial.print(s2);
+  Serial.print(" ");
+  Serial.print(s3);
+  Serial.print(" ");
+  Serial.print(s4);
+  Serial.print(" "); 
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7  mt-5"><p>...Partimos do principio que a linha indicadora da direção é na cor clara (branco), e seu envolto é de cor escura (preto).</p> Se os sensores localizados no lado esquerdo e direito não captarem a luminosidade da linha (Na cor branca), e apenas as sensores centrais tiverem estes valores, o cogido interpretará que ambos motores devem ir na mesma velocidade e para frente, com o LED indicando a cor verde.</div>
+      <div class="col-md-5">
+        <pre><code class="C">
+if(s1&lt;luz && s2&gt;luz && s3&gt;luz && s4&lt;luz){
+  // FRENTE
+  Serial.println(" Frente ");
+  
+  digitalWrite(LEDR, LOW);
+  digitalWrite(LEDG, HIGH);
+  digitalWrite(LEDB, LOW);
+  
+  digitalWrite(IN1,HIGH);
+  digitalWrite(IN2,LOW);
+  digitalWrite(IN3,LOW);
+  digitalWrite(IN4,HIGH);
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7  mt-5">Se, eventualmente, o sensor da lado esquerdo não captar luminosidade, mas os demais sim, então o carrinho irá virar para o Iado direito e acenderá o LED na cor vermelha.</div>
+      <div class="col-md-5">
+        <pre><code class="C">
+}else if (s1&gt;luz && s2&lt;luz && s3&lt;luz && s4&lt;luz){
+  // DIREITA
+  Serial.println(" Direita ");
+  
+  digitalWrite(LEDR, HIGH);
+  digitalWrite(LEDG, LOW);
+  digitalWrite(LEDB, LOW);
+  
+  digitalWrite(IN1,LOW);
+  digitalWrite(IN2,HIGH);
+  digitalWrite(IN3,LOW);
+  digitalWrite(IN4,HIGH);
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7  mt-5"><p>Na entanto, se os sensores da direita não captarem a linha na cor branca mas os demais sim, a carrinho irá virar para o lado esquerdo, e o LED também ficará na cor vermelha</p>
+      </div>
+      <div class="col-md-5">
+        <pre><code class="C">
+}else if (s1&lt;luz && s2&lt;luz && s3&lt;luz && s4&gt;luz){
+  // ESQUERDA
+  Serial.println(" Esquerda ");
+  
+  digitalWrite(LEDR, HIGH);
+  digitalWrite(LEDG, LOW);
+  digitalWrite(LEDB, LOW);
+  
+  digitalWrite(IN1,HIGH);
+  digitalWrite(IN2,LOW);
+  digitalWrite(IN3,HIGH);
+  digitalWrite(IN4,LOW);
+        </code></pre>
+      </div>
+    </div>
+    <div class="row ml-3 mr-5">
+      <div class="col-md-7  mt-5">E finalizando o código, se nenhuma das condições anteriores forem atendidas, o carinho ficará parado e o LED estará na cor azul</div>
+      <div class="col-md-5">
+        <pre><code class="C">
+}else{
+  // DESLIGADO
+  Serial.println(" Parado ");
+  
+  digitalWrite(LEDR, LOW);
+  digitalWrite(LEDG, LOW);
+  digitalWrite(LEDB, HIGH);
+  
+
+  digitalWrite(IN1,LOW);
+  digitalWrite(IN2,LOW);
+  digitalWrite(IN3,LOW);
+  digitalWrite(IN4,LOW);
+  }
+}      
+        </code></pre>
+      </div>
+    </div>
+    <p class="pb-2 text-center pt-5">Atualmente, integramos o conceito de PID no código do nosso robô seguidor de linha, os links para ambos os códigos completos se encontram abaixo.</p>
+    <div class="social-links mt-3 text-center pt-2">
+      <div class="container pb-4 mb-3">
+        <div class="container pb-3">
+          <a href="https://gist.github.com/gui-brv/ee98e5a74e1cb2562cef1f3c537135cd" class="btn btn-shadow text-mono btn-outline-light">
+            <span class="fas fa-code mr-2"></span>
+            v1 - Código do Exemplo</a>
+        </div>
+        <div class="container pb-3">
+          <a href="https://gist.github.com/gui-brv/d5bbb4c548a0e8552f187b5522844dda" class="btn btn-shadow text-mono btn-outline-light">
+            <span class="fas fa-code mr-2"></span>
+            v2 - Integração do PID</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ### Componentes ### -->
+    <section id="componentes" class="componentes pb-5">
+      <div class="container pb-5">
+        <div class="section-title">
+          <h2 class="pl-3">Componentes</h2>
+          <p class="pl-3 pb-4">Lista de componentes que usamos para montagem do seguidor de linha.</p>
+        </div>
+        <div class="row pl-3 pr-3">
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/arduino.png" class="img-fluid" alt="Arduino"></div>
+            <h4 class="pt-2 title">Arduino</h4>
+            <p class="description">Responsável por ler os sinais recebidos e aplicar a inteligência com base no código programado.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/bateria.png" class="img-fluid" alt="Bateria 9v"></div>
+            <h4 class="pt-2 title">Bateria 9v</h4>
+            <p class="description"> Responsável pela alimentação do circuito.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/motor.png" class="img-fluid" alt="Motor"></div>
+            <h4 class="pt-2 title">Motores</h4>
+            <p class="description">Responsáveis pela movimentação do carrinho, com base nos comandos recebidos pelo Arduino.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/placa.png" class="img-fluid" alt="Placa"></div>
+            <h4 class="pt-2 title">Placa de Ensaio</h4>
+            <p class="description">Placa por onde todo o circuito é conectado.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/portalogica.png" class="img-fluid" alt="Porta Lógica"></div>
+            <h4 class="pt-2 title">Porta Lógica L293D</h4>
+            <p class="description">Usada para controle dos motores.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/interruptor.png" class="img-fluid" alt="Interruptor"></div>
+            <h4 class="pt-2 title">Interruptor Deslizante</h4>
+            <p class="description">Responsável por ligar/desligar o circuito.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/resistencia.png" class="img-fluid" alt="Resistencia"></div>
+            <h4 class="pt-2 title">Resistências</h4>
+            <p class="description">Responsáveis em auxiliar no acionamento do LED</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/sensor.png" class="img-fluid" alt="Sensor"></div>
+            <h4 class="pt-2 title">Sensor de Luminosidade</h4>
+            <p class="description">Responsável por fazer a leitura e identificar a diferença de cor na pista.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box pb-4 pt-2">
+            <div class="icon"><img src="/assets/img/componentes/led.png" class="img-fluid" alt="Led RGB"></div>
+            <h4 class="pt-2 title">Led RGB</h4>
+            <p class="description">Responsável por sinalizar, através da cor, o estado atual do carrinho.</p>
+          </div>
+        </div>
+        <div class="container pl-3 pt-3 pb-4">
+          <cite>Os componentes podem variar a depender do projeto!</cite>
+        </div>
+      </div>
+    </section>
+
+  <!-- ### Equipe ### -->
+  <section id="team">
+    <div class="container bootdey">
+      <div class="row">
+          <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+                  <h2 class="team-title"><mark class="mark_teams">&nbsp;Nossa&nbsp;Equipe&nbsp;</mark></h2>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+          <div class="team text-center rounded p-3 py-4">
+              <img src="/assets/img/team/fabio.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+              <div class="content mt-3">
+                  <h4 class="title mb-0 pt-2">Fábio Elias Cypriano</h4>
+                  <small class="text-muted">Programação dos códigos e gerênciador dos Robôs</small>
+                  <ul class="list-unstyled mt-1 social-icon social mb-0">
+                      <a title="Linkedin" href="#!" class="btn btn-shadow btn-outline-light"><span class="fab fa-linkedin fa-lg"></span></a>
+                      <a title="Github" href="https://github.com/Cypirando" class="btn btn-shadow btn-outline-light"><span class="fab fa-github-square fa-lg"></span></a>
+                      <a title="Instagram" href="https://instagram.com/Cypirando" class="btn btn-shadow btn-outline-light"><span class="fab fa-instagram-square fa-lg"></span></a>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+          <div class="team text-center rounded p-3 py-4">
+            <img src="/assets/img/team/guilherme.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+              <h4 class="title mb-0 pt-2">Guilherme Banzati Viana Ribeiro</h4>
+              <small class="text-muted">Pesquisa e Programador do Site</small>
+              <ul class="list-unstyled mt-1 social-icon social mb-0">
+                <a title="Linkedin" href="https://www.linkedin.com/in/guilherme-banzati-viana-ribeiro-380b21212/" class="btn btn-shadow btn-outline-light"><span class="fab fa-linkedin fa-lg""></span></a>
+                <a title="Github" href="https://github.com/gui-brv" class="btn btn-shadow btn-outline-light"><span class="fab fa-github-square fa-lg"></span></a>
+                <a title="Instagram" href="https://instagram.com/guibvianaribeiro/" class="btn btn-shadow btn-outline-light"><span class="fab fa-instagram-square fa-lg""></span></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+          <div class="team text-center rounded p-3 py-4">
+              <img src="/assets/img/team/rodrigo.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+              <div class="content mt-3">
+                  <h4 class="title mb-0 pt-2">Rodrigo Denk Rosa</h4>
+                  <small class="text-muted">Programador, Pesquisa e Hospedagem do Site</small>
+                  <ul class="list-unstyled mt-1 social-icon social mb-0">
+                    <a title="Instagram" href="https://instagram.com/Cypirando" class="btn btn-shadow btn-outline-light"><span class="fab fa-instagram-square fa-lg"></span></a>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+          <div class="team text-center rounded p-3 py-4">
+            <img src="/assets/img/team/wanderlei.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+              <h4 class="title mb-0 pt-2">Wanderlei Carlos Ferreira</h4>
+              <small class="text-muted">Programador, Editor, Pesquisa e Hospedagem do Site</small>
             </div>
           </div>
         </div>
       </div>
-            <div clas="row">
-                <h3 class="text-center pt-5 pb-2">Exemplo de Funcionamento</h3>
-                    <div class="container card-body jumbotron">
-                        <div class="row text-center rounded mx-auto d-block">
-                            <img class="img-fluid" src="assets/seguidor_de_linha/exemplo.jpg" alt="Exemplo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="card text-center">
-                <div class="card-header">
-                    <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active">Imagem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://raw.githubusercontent.com/stealenergy/servidores-de-linha/main/8.%20Seguidor%20de%20Linha/8.%20Seguidor%20de%20Linha.cpp">Código</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#!">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            <div class="card-body">
-                <h4 class="card-title pt-2 pb-4">Exemplo de Seguidor de Linha feito pelo Tinkercard</h4>
-                <img class="img-fluid" src="assets/seguidor_de_linha/tinkercard.png" alt="Exemplo">
-                <p class="pt-4 pb-3 card-text">Após a parte da montagem e programação, é essencial fazer a calibragem (testes) para ter certeza que tudo corre bem. Desde as partidas dos motores, até quanto a luz que o sensor precisara receber para então assim fazer a curva, por exemplo. Tudo pode ser feito numa ferramenta super bacana chamada Tinkercad, nela você pode fazer toda a simulação para, assim, conseguir um projeto melhor.</p>No Link acima você consegue ver um exemplo de um código exportado pelo Tinkercard.</p>
-            </div>
-        </div>
+    </div>
+    </div>
   </section>
 
+  </main>
 
-
-  <!-- Local navbar-script -->
-  <script src="js/navbar-script.js"></script>
+  <!-- micromodal.js-->
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js" crossorigin="anonymous"></script>
+  <!-- CDN Font Awesome Icons-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
   <!-- Core Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- Core jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- highlight.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <!-- script.js -->
+  <script src="/script.js"></script>
+  
 </body>
 
 </html>
