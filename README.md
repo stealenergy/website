@@ -1,1 +1,1 @@
-https://stealenergy.com.br
+stealenergy.com.br
