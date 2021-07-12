@@ -1,6 +1,11 @@
 !(function($) {
     "use strict";
 
+  $('a.menu').click(function(){
+      $('a.menu').removeClass("active");
+      $(this).addClass("active");
+  });
+
     $(document).on('click', '.nav-menu a, .scrollto', function(e) {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         e.preventDefault();
