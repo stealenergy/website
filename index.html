@@ -139,10 +139,12 @@
 
   <!-- ### Tinkercard ### -->
   <section id="tinkercard">
-    <div class="section-title pt-4 mt-4 pb-1">
-      <h2 class="pl-3">Autodesk Tinkercad</h2>
-      <p class="pl-3 pt-2">O Tinkercad é um programa da Autodesk de modelagem 3D online gratuito que roda em um navegador da web.</p>
-      <p class="pl-3 pb-1">Nele podemos também projetar e fazer a simulação de circuitos em Arduino, como no exemplo abaixo, em que projetamos nosso robô.</p>
+    <div class="container">
+      <div class="section-title pt-4 mt-4 pb-1">
+        <h2 class="pl-3">Autodesk Tinkercad</h2>
+        <p class="pl-3 pt-2">O Tinkercad é um programa da Autodesk de modelagem 3D online gratuito que roda em um navegador da web.</p>
+        <p class="pl-3 pb-1">Nele podemos também projetar e fazer a simulação de circuitos em Arduino, como no exemplo abaixo, em que projetamos nosso robô.</p>
+      </div>
     </div>
     <div class="container pb-5">
       <div class="row text-center rounded mx-auto d-block">
@@ -155,10 +157,12 @@
 
   <!-- ### Código ### -->
   <section id="codigo">
-    <div class="section-title pt-4 pl-3 pb-1">
-      <h3 class="pl-3">Código do Robô</h3>
-      <p class="pl-3 pt-2">Programamos o robô com o objetivo de manter sempre os dois sensores sobre a linha.</p>
-      <p class="pl-3 pb-1">Na explicação abaixo, detalhamos o funcionamento do nosso primeiro código.</p>
+    <div class="container">
+      <div class="section-title pt-4 pl-3 pb-1">
+        <h3 class="pl-3">Código do Robô</h3>
+        <p class="pl-3 pt-2">Programamos o robô com o objetivo de manter sempre os dois sensores sobre a linha.</p>
+        <p class="pl-3 pb-1">Na explicação abaixo, detalhamos o funcionamento do nosso primeiro código.</p>
+      </div>
     </div>
     <div class="row ml-3 mr-5">
       <div class="col-md-7 mt-5"><p>Nesta primeira parte, são definidos os nomes para as portas que serão usadas para a execução deste código.</p><p>Este não é um processo obrigatório, porém facilita muito o desenvolvimento do programa.</p></div>
@@ -299,7 +303,7 @@ if(s1&lt;luz && s2&gt;luz && s3&gt;luz && s4&lt;luz){
     </div>
     <div class="row ml-3 mr-5">
       <div class="col-md-7  mt-5">E finalizando o código, se nenhuma das condições anteriores forem atendidas, o carinho ficará parado e o LED estará na cor azul</div>
-      <div class="col-md-5">
+      <div class="col-lg-5">
         <pre><code class="C">
 }else{
   // DESLIGADO
@@ -319,7 +323,7 @@ if(s1&lt;luz && s2&gt;luz && s3&gt;luz && s4&lt;luz){
         </code></pre>
       </div>
     </div>
-    <p class="pb-2 text-center pt-5">Atualmente, integramos o conceito de PID no código do nosso robô seguidor de linha, os links para ambos os códigos completos se encontram abaixo.</p>
+    <p class="text-center pt-5">Atualmente, integramos o conceito de PID no código do nosso robô seguidor de linha, os links para ambos os códigos completos se encontram abaixo.</p>
     <div class="social-links mt-3 text-center pt-2">
       <div class="container pb-4 mb-3">
         <div class="container pb-3">
@@ -327,18 +331,21 @@ if(s1&lt;luz && s2&gt;luz && s3&gt;luz && s4&lt;luz){
             <span class="fas fa-code mr-2"></span>
             v1 - Código do Exemplo</a>
         </div>
-        <div class="container pb-3">
+        <div class="container pb-1">
           <a href="https://gist.github.com/gui-brv/d5bbb4c548a0e8552f187b5522844dda" class="btn btn-shadow text-mono btn-outline-light">
             <span class="fas fa-code mr-2"></span>
             v2 - Integração do PID</a>
         </div>
       </div>
     </div>
+    <div class="container pl-3 pt-1 pb-5 mb-5 text-center">
+      <cite>Nota: A segunda versão do nosso código ainda esta em fases de testes e não se encontra totalmente funcional!</cite>
+    </div>
   </section>
 
     <!-- ### Componentes ### -->
     <section id="componentes" class="componentes pb-5">
-      <div class="container pb-5">
+      <div class="container pb-5 pt-5">
         <div class="section-title">
           <h2 class="pl-3">Componentes</h2>
           <p class="pl-3 pb-4">Lista de componentes que usamos para montagem do seguidor de linha.</p>
@@ -461,10 +468,13 @@ if(s1&lt;luz && s2&gt;luz && s3&gt;luz && s4&lt;luz){
     </div>
   </section>
 
+  <!-- Footer -->
+  <div class="container text-center pt-5 mt-5 mb-1 pb-1">
+    <img src="https://raw.githubusercontent.com/stealenergy/website/main/assets/logos/logo_madebystealenergy.png" class="img-fluid img-footer" alt="Copyright Steal Energy">
+  </div>
+
   </main>
 
-  <!-- micromodal.js-->
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js" crossorigin="anonymous"></script>
   <!-- CDN Font Awesome Icons-->
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
   <!-- Core Bootstrap-->

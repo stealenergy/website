@@ -411,31 +411,6 @@ body {
       font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .code-cpp {
     width: 60vh;
 }
@@ -445,4 +420,12 @@ body {
         width: 55vh;
     }
 
+}
+
+/*
+### Footer ###
+*/
+.img-footer {
+    width: 200px;
+    margin-top: 8vh;
 }
